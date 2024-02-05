@@ -1,0 +1,438 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  text-align: center;
+  padding: 0.7rem 0.7rem;
+  color: rgb(0,0,0);
+  background-color: #202020;
+  overflow: auto;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #000000;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 2.25rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+}
+
+.inner-sidebar-nav-item {
+  display: block;
+  margin-left: 6px;
+}
+.sidebar-nav-item-inner.active {
+  font-weight: bold;
+}
+
+.inner-sidebar-nav-item-two {
+  margin-left: 12px;
+  display: block;
+}
+
+@media (max-width: 48em) {
+  .sidebar-nav-item {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .inner-sidebar-nav-item {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .sidebar-nav-item-inner.active {
+    font-weight: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .inner-sidebar-nav-item-two {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+a.inner-sidebar-nav-item:hover,
+a.inner-sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.inner-sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+a.inner-sidebar-nav-item-two:hover,
+a.inner-sidebar-nav-item-two:focus {
+  text-decoration: underline;
+}
+.inner-sidebar-nav-item-two.active {
+  font-weight: bold;
+}
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+.sidebar-nav-item.minor {
+  color: rgb(0,0,0);
+  font-size: 60%;
+}
+
+@media (max-width: 48em) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .mobile-display {
+    display: none;
+  }
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 46rem;
+    margin-left: 14rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 14rem;
+    margin-right: 4rem;
+  }
+}
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red */
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .sidebar {
+  background-color: #d28445;
+}
+.theme-base-09 .content a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .sidebar {
+  background-color: #90a959;
+}
+.theme-base-0b .content a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
+
+/* Brown */
+.theme-base-grey .sidebar {
+  background-color: #e4e4e7;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #e4e4e7;
+}
+
+.item_example-image-link {
+    height: 55px;
+    width: auto;
+    display: inline-block; /* for centering */
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.example_column {
+  float: left;
+  padding: 13px;
+  text-align: center;
+}
+
+.example_row {
+    margin-bottom: 5%;
+}
+
+/* Clear floats after image containers */
+.example_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.oscar_detail, .example_row {
+  width: 100%;
+  padding: 10px;
+  background-color: #e4e4e7;
+  border-radius: 5px;
+}
+
+.item_example {
+  width: 85%;
+  padding: 1rem;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e4e4e7;
+  border-radius: 5px;
+  vertical-align: center;
+}
+
+.item_example_left {
+  float: left;
+}
+
+.item_example_right {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.item_example-title {
+}
+
+.item_example-author {
+  font-size: 80%;
+}
+
+.item_example-image {
+  height: auto;
+  width: 50px;
+  float: left;
+  margin: 0.5rem;
+}
+
+.item_last_modified{
+  font-size: 80%;
+}
+
+/* cf. https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
+.gallery_example_cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* use 16rem for 3 lines per card */
+}
+
+.item_example_card {
+  background-color: #e4e4e7;
+  padding: 10px;
+  border-radius: 5px;
+  height: 8.5rem; /* so that all cards have the same height, and that everything    */
+                  /* still fits when narrowing the window and 4 lines are used      */
+                  /* might need adjustment when 5 lines are used (i.e. long title   */
+                  /* and long author names), or change of `grid-template-columns`   */
+                  /* use 5rem for 3 lines per card and 7rem for 4 lines per card    */
+}
+
+.menu_bar_paragraph {
+  margin-bottom: 8px;
+}
+
+.software_credits_list {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style-type: none;
+}
+
+/* @media (max-width: 48em) {
+  .sidebar-image {
+    float: center;
+    max-width: 30%;
+  }
+} */

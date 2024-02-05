@@ -1,0 +1,21 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom">
+  <author>
+    <name>The OSCAR Team</name>
+  </author>
+  <title>OSCAR news</title>
+  <id>https://www.oscar-system.org</id>
+  <updated>{{ site.time }}</updated>
+
+{% for post in site.categories.news %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ post.url | absolute_url }}"/>
+    <id>{{ post.url | absolute_url }}</id>
+    <updated>{{ post.date }}</updated>
+  </entry>
+{% endfor %}
+</feed>

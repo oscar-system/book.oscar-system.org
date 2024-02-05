@@ -1,0 +1,162 @@
+/* 
+Based on https://codepen.io/jdsteinbach/pen/GYmQjo
+*/
+
+.clickdesc details {
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  width: 40em;
+  max-width: calc(100% - 2rem);
+  position: relative;
+  border: 1px solid #78909C;
+  border-radius: 6px;
+  background-color: #ECEFF1;
+  color: #263238;
+  transition: background-color .15s;
+  
+  > :last-child {
+    margin-bottom: 1rem;
+  }
+  
+  &::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    opacity: .15;
+    box-shadow: 0 .25em .5em #263238;
+    pointer-events: none;
+    transition: opacity .2s;
+    z-index: -1;
+  }
+  
+  &[open] {
+    background-color: #FFF;
+    
+    &::before {
+      opacity: .6;
+    }
+  }
+}
+
+.clickdesc summary {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  display: block;
+  position: relative;
+/*   font-size: 1.33em; */
+  font-weight: bold;
+  cursor: pointer;
+  
+  &::before,
+  &::after {
+    width: .75em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    background-color: currentColor;
+    text-align: right;
+    transform: translateY(-50%);
+    transition: transform .2s ease-in-out;
+  }
+  
+  &::after {
+    transform: translateY(-50%) rotate(90deg);
+    
+    [open] & {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+
+.read-more
+{
+    font-style: italic;
+}
+
+/* override theme defaults */
+.page,
+.post {
+  margin-bottom: 2em;
+}
+
+.post p
+{
+    margin-bottom: 0em;
+}
+
+/* auto-generated from https://forkmeon.github.io/ */
+.github-ribbon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  z-index: 99999;
+}
+.github-ribbon a {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  padding: 6px 0px;
+  text-align: center;
+  transform: rotate(45deg);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: inherit;
+  top: 45px;
+  right: -40px;
+  border-width: 1px 0px;
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.7);
+  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 3px 0px;
+  background-color: rgb(170, 0, 0);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+}
+
+.meeting-nav {
+  padding-bottom: 1rem;
+}
+
+.meeting-nav a {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.participants-organizer { color: green; }
+
+.participants-instructor { color: green; }
+
+.participants-speaker { color: black; }
+
+.participants-blue-group { color: #005493; }
+
+.participants-red-group { color: #941100; }
+
+details.spoiler summary::after {
+  content: var(--hidden);
+  filter: blur(4px);
+  display: block;
+  margin-bottom:1em;
+}
+
+details[open] summary::after {
+  display: none;
+}
+
+.message-big {
+  text-align: center;
+  font-weight: bold;
+  font-size:2em
+}

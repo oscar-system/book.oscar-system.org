@@ -1,0 +1,10 @@
+[Unit]
+Description="Update OSCAR website"
+
+[Service]
+Type=oneshot
+ExecStart=/srv/www/www-mathe-oscar/data/oscar-website/etc/update.sh
+WorkingDirectory=/srv/www/www-mathe-oscar/data/oscar-website/
+
+[Install]
+WantedBy=default.target
