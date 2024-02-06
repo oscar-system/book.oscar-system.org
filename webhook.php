@@ -11,20 +11,20 @@ See `etc/README.server.md` for details on how to set up the webhook on GitHub.
 
 The crucial bit is at the end of this .php file, where an empty file
 $triggerfile is created. This is detected by a systemd unit
-~/.config/systemd/user/oscar-website.path (a copy of this file is in the
+~/.config/systemd/user/book.oscar-system.org.path (a copy of this file is in the
 `etc` directory).
 
-This then triggers ~/.config/systemd/user/oscar-website.service
+This then triggers ~/.config/systemd/user/book.oscar-system.org.service
 (a copy of this file is in the `etc` directory).
 
 This finally executes `etc/update.sh`, which runs jekyll.
 */
-$triggerfile = "/srv/www/www-mathe-oscar/data/oscar-website.trigger";
+$triggerfile = "/srv/www/www-oscar-book/data/book.oscar-system.org.trigger";
 
 /*
 We set a secret token by adding a line of the form
     SetEnv GITHUB_WEBHOOK_SECRET "MY_SECRET"
-to the file /srv/www/www-mathe-oscar/data/webhook.secret
+to the file /srv/www/www-oscar-book/data/webhook.secret
 with the actual secret key taking the place of MY_SECRET.
 The same value must be entered in the GitHub webhook settings.
 */
