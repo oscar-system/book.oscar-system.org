@@ -10,4 +10,6 @@ title: Home
 
 # {{ site.title }}
 
-This is a stub for the OSCAR book website
+This is a stub for the OSCAR book website.
+
+This checks whether the system works properly.
