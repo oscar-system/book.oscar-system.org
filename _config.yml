@@ -6,7 +6,7 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'The Computer Algebra System OSCAR. Algorithms and Examples'
+title:            'The OSCAR Book Companion: Code Examples and Errata'
 description:      'OSCAR, an Open Source Computer Algebra Research System written in Julia'
 url:              https://oscar.github.io
 baseurl:          /oscar-website
@@ -16,7 +16,7 @@ plugins:
   - jekyll-sitemap
 
 # for SEO plugin
-tagline:          'The Computer Algebra System OSCAR'
+tagline:          'The OSCAR Book Companion'
 logo:             /public/OSCAR_logo.png
 
 exclude:
