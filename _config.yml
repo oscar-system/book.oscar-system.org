@@ -6,7 +6,7 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            'The OSCAR Book Companion: Code Examples and Errata'
+title:            'The OSCAR Book Companion: Code & Errata'
 description:      'OSCAR, an Open Source Computer Algebra Research System written in Julia'
 url:              https://oscar.github.io
 baseurl:          /oscar-website
