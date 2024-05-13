@@ -1,3 +1,10 @@
+---
+layout: page
+title: Invariant Theory
+---
+
+## Authors: Wolfram Decker, Lakshmi Ramesh and Johannes Schmitt
+
 ```julia
 julia> RS4 = invariant_ring(GF(2), symmetric_group(4))
 Invariant ring

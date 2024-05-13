@@ -1,3 +1,10 @@
+---
+layout: page
+title: Confirmable Workflows
+---
+
+## Authors: Michael Joswig, Lars Kastner and Benjamin Lorenz
+
 ```julia
 julia> Oscar.versioninfo(full=true)
 OSCAR version 1.0.0

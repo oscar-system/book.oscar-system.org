@@ -1,3 +1,10 @@
+---
+layout: page
+title: F-Theory Applications of OSCAR
+---
+
+## Authors: Martin Bies and Andrew P. Turner
+
 ```julia
 julia> B3 = projective_space(NormalToricVariety, 3)
 Normal toric variety

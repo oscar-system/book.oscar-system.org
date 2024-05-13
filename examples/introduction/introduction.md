@@ -1,3 +1,10 @@
+---
+layout: page
+title: Introduction
+---
+
+## Authors: Claus Fieker and Michael Joswig
+
 ```julia
 julia> R, p = residue_ring(ZZ, 3);
 

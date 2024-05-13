@@ -1,3 +1,10 @@
+---
+layout: page
+title: Matroids
+---
+
+## Authors: Daniel Corey, Lukas Kühne and Benjamin Schröter
+
 ```julia
 julia> B = [[1,2],[1,3],[1,4],[2,3],[2,4]];
 

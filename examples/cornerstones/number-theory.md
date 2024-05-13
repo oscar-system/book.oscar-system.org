@@ -1,3 +1,10 @@
+---
+layout: page
+title: Number Theory
+---
+
+## Authors: Claus Fieker and Tommy Hofmann
+
 ```julia
 julia> Qx, x = QQ["x"];
 

@@ -1,3 +1,10 @@
+---
+layout: page
+title: Monomial Bases in Lie Theory
+---
+
+## Authors: Xin Fang and Ghislain Fourier
+
 ```julia
 julia> basis_lie_highest_weight_operators(:A, 4)
 10-element Vector{Tuple{Int64, Vector{QQFieldElem}}}:
