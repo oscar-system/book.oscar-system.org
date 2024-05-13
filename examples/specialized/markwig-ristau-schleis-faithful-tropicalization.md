@@ -3,7 +3,7 @@ layout: page
 title: Faithful Tropicalization of Hyperelliptic Curves
 ---
 
-## Authors: Hannah Markwig, Lukas Ristau, and Victoria Schleis
+## Authors: Hannah Markwig, Lukas Ristau and Victoria Schleis
 
 ```julia
 julia> Kt,t = rational_function_field(QQ,"t")

@@ -3,7 +3,7 @@ layout: page
 title: An Atlas of Orthogonal Representations
 ---
 
-## Authors: Thomas Breuer, Gabriele Nebe, and Richard Parker
+## Authors: Thomas Breuer, Gabriele Nebe and Richard Parker
 
 ```julia
 julia> ch = character_table("Co2", 2)[2];
