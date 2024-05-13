@@ -78,6 +78,11 @@ contributors:
     website: https://page.math.tu-berlin.de/~kastner/
     github: lkastner
 
+  - name: Lukas Kühne  # works on matroids with Benjamin Schröter
+    affiliation: Bielefeld University
+    website: https://www.math.uni-bielefeld.de/~lkuehne/
+    github: LukasKuehne
+
   - name: Benjamin Lorenz
     affiliation: TU Berlin
     website: https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fg_diskrete_mathematik_geometrie/v_menue/mitarbeiter/benjamin_lorenz/v_menue/home/
@@ -92,11 +97,6 @@ contributors:
     affiliation: University of Siegen
     website: https://joschmitt.eu
     github: joschmitt
-
-  - name: Lukas Kühne  # works on matroids with Benjamin Schröter
-    affiliation: Bielefeld University
-    website: https://www.math.uni-bielefeld.de/~lkuehne/
-    github: LukasKuehne
 
   - name: Benjamin Schröter  # works on matroids with Lukas Kühne
     affiliation: KTH Stochkholm
