@@ -1,3 +1,10 @@
+---
+layout: page
+title: Algorithms for Gromov-Witten Invariants of Elliptic Curves
+---
+
+## Authors: Janko Böhm, Firoozeh Dastur, Alain Hoffmann, Hannah Markwig and Ali Traore
+
 ```julia
 julia> using GromovWitten
 

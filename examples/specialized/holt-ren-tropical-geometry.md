@@ -1,3 +1,10 @@
+---
+layout: page
+title: Generic Root Counts of Tropically Transverse Systems
+---
+
+## Authors: Isaac Holt and Yue Ren
+
 ```julia
 julia> T = tropical_semiring()
 Min tropical semiring

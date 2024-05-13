@@ -1,3 +1,10 @@
+---
+layout: page
+title: Gröbner Bases for Polynomial Ideals and Applications
+---
+
+## Authors: Christian Eder, Rafael Mohr and Mohab Safey El Din
+
 ```julia
 julia> R, (X0, X1, X2, X3) = graded_polynomial_ring(QQ, ["X$i" for i in 0:3]);
 

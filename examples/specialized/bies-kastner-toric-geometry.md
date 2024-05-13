@@ -1,3 +1,10 @@
+---
+layout: page
+title: Toric Geometry
+---
+
+## Authors: Martin Bies and Lars Kastner
+
 ```julia
 julia> sigma = positive_hull([1 0; -1 2])
 Polyhedral cone in ambient dimension 2

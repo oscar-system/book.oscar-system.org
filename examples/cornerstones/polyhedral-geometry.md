@@ -1,3 +1,10 @@
+---
+layout: page
+title: Polyhedral Geometry
+---
+
+## Authors: Taylor Brysiewicz and Michael Joswig
+
 ```julia
 julia> points = [1 0; 1 1; 0 1; -1 0; -1 -1];
 

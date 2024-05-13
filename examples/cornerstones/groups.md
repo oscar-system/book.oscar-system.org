@@ -1,3 +1,10 @@
+---
+layout: page
+title: Group Theory
+---
+
+## Authors: Max Horn and Claus Fieker
+
 ```julia
 julia> G_perm = @permutation_group(5, (2,5)(3,4), (1,3)(4,5))
 Permutation group of degree 5

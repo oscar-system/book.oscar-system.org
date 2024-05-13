@@ -1,3 +1,10 @@
+---
+layout: page
+title: Algorithms for GIT-Fans of Affine Torus Actions
+---
+
+## Authors: Janko Böhm and Thomas Breuer
+
 ```julia
 julia> using Oscar.GITFans
 

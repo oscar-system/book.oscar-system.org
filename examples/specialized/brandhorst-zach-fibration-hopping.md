@@ -1,3 +1,10 @@
+---
+layout: page
+title: Elliptic Fibrations on Vinberg’s Most Algebraic K3 Surface
+---
+
+## Authors: Simon Brandhorst and Matthias Zach
+
 ```julia
 julia> Qt, t = polynomial_ring(QQ, :t)
 (Univariate polynomial ring in t over QQ, t)
