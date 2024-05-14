@@ -43,18 +43,19 @@ contributors:
     affiliation: University of Kaiserslautern-Landau
     website: https://math.rptu.de/en/wgs/agag/people/head/decker
     github: wdecker
-    is_active_PI: true
+    is_editor: true
 
   - name: Christian Eder
     affiliation: University of Kaiserslautern-Landau
     website: https://www.mathematik.uni-kl.de/~ederc/index.html
     github: ederc
+    is_editor: true
 
   - name: Claus Fieker
     affiliation: University of Kaiserslautern-Landau
     website: https://math.rptu.de/en/wgs/agag/people/head/fieker
     github: fieker
-    is_active_PI: true
+    is_editor: true
 
   - name: Tommy Hofmann
     affiliation: University of Siegen
@@ -65,13 +66,13 @@ contributors:
     affiliation: University of Kaiserslautern-Landau
     website: https://www.quendi.de/math
     github: fingolfin
-    is_active_PI: true
+    is_editor: true
 
   - name: Michael Joswig
     affiliation: TU Berlin
     website: https://page.math.tu-berlin.de/~joswig/
     github: micjoswig
-    is_active_PI: true
+    is_editor: true
 
   - name: Lars Kastner
     affiliation: TU Berlin
@@ -110,11 +111,11 @@ contributors:
 
 ---
 
-## Project leaders
+## Editors
 
 <ul>
 {% for p in page.contributors %}
-{% if p.is_active_PI == true %}
+{% if p.is_editor == true %}
   <li>
     <a href="{{ p.website }}"><strong>{{ p.name }}</strong></a>, {{ p.affiliation }}
     {%- if p.github != null %}
@@ -125,11 +126,11 @@ contributors:
 {% endfor %}
 </ul>
 
-## Chapter Authors
+## Authors
 
 <ul>
 {% for p in page.contributors %}
-{% if p.is_active_PI != true %}
+{% if p.is_editor != true %}
   <li>
     {% if p.website != null %}
         <a href="{{ p.website }}">
