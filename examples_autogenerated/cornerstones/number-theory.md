@@ -129,8 +129,6 @@ y2 = (x -> max(0, sqrt(3)*x - sqrt(3))).(x);
 p = scatter(real.(pts), imag.(pts), framestyle=:origin,
             legend = false, mc = :red)
 plot!(p, x, y1, fillrange = y2, fillalpha = 0.25, color = :blue)
-# output
-Plot{Plots.GRBackend() n=2}
 ```
 
 ```julia
@@ -144,8 +142,6 @@ plot!(x, [y1 -y1 y2 -y2], color = :black)
 units = [(1, 0), (-1, 0), (2, 1), (-2, 1), (-2, -1),
          (2, -1), (7, 4), (7, -4), (-7, 4), (-7, -4)];
 scatter!(units, color = :red)
-# output
-Plot{Plots.GRBackend() n=6}
 ```
 
 ```julia
@@ -157,8 +153,6 @@ scatter(pts, framestyle=:origin, leg = false, mc = :blue, alpha = 0.25)
 x = range(-3, 3, 100); y = -x; plot!(x, y, color = :black)
 units = [ i .* l(2, 1) for i in -2:2]
 scatter!(units, color = :red)
-# output
-Plot{Plots.GRBackend() n=3}
 ```
 
 ```julia
@@ -326,8 +320,6 @@ G, C = galois_group(K)
 subsG = subgroups(G)
 H = first(H for H in subsG if order(H) == 27)
 k, = simplify(fixed_field(C, H))
-# output
-(Number field of degree 8 over QQ, Map: k -> number field)
 ```
 
 ```julia
@@ -487,12 +479,6 @@ for i in 1:8, j in 1:number_of_small_groups(i)
   println(i, " ", j, " ", describe(G), ": ", locally_free_class_group(ZG))
 end
 
-# output
-┌ Warning: Assignment to `G` in soft scope is ambiguous because a global variable by the same name exists: `G` will be treated as a new local. Disambiguate by using `local G` to suppress this warning or `global G` to assign to the existing global variable.
-└ @ none:2
-6 1 S3: Z/1
-8 3 D8: Z/1
-8 4 Q8: Z/2
 ```
 
 ```julia
@@ -509,7 +495,4 @@ for F in abelian_normal_extensions(k, [2], ZZ(10)^13)
   end
   push!(candidates, K)
 end
-# output
-┌ Warning: Assignment to `K` in soft scope is ambiguous because a global variable by the same name exists: `K` will be treated as a new local. Disambiguate by using `local K` to suppress this warning or `global K` to assign to the existing global variable.
-└ @ none:2
 ```

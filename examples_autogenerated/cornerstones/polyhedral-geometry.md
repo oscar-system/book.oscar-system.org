@@ -186,8 +186,6 @@ using Plots
 scatter(g_vectors[:,1], g_vectors[:,2],
         xlabel="g_2", ylabel="g_3", legend=false);
 
-# output
-Plot{Plots.GRBackend() n=1}
 ```
 
 ```julia

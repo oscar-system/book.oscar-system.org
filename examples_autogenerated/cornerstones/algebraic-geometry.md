@@ -754,8 +754,6 @@ function dual_curve(f::MPolyRingElem, P_dual::MPolyRing)
   return dual_curve[1]
 end
 
-# output
-dual_curve (generic function with 1 method)
 ```
 
 ```julia
