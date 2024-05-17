@@ -14,6 +14,7 @@ function collect_examples(oscardir::String)
         for m in eachmatch(r"# INSERT_EXAMPLE (\S*)", entire)
             codefile = m[1]
             code = read(joinpath(booktestdir, codefile), String)
+            code = split(code, "# output")[1]
             println(codefile)
             if !endswith(code, "\n")
                 code *= "\n"
