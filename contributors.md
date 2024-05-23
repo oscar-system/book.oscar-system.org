@@ -31,7 +31,7 @@ contributors:
     affiliation: Max Planck Institute for Mathematics in the Sciences
     website: https://sites.google.com/view/taylorbrysiewicz/home
     github: tbrysiewicz
-    email: Taylor.Brysiewicz@mis.mpg.de
+    email: tbrysiew@uwo.ca
 
   - name: Janko Böhm
     affiliation: University of Kaiserslautern-Landau
@@ -158,7 +158,7 @@ contributors:
 
   - name: Kemal Rose
     affiliation: MPI Mathematik in den Naturwissenschaften, Leipzig, Germany,
-    e-mail: krose@mis.mpg.de
+    e-mail: kemalr@kth.se
     website: https://kemalrose.github.io/
 
   - name: Mohab Safey El Din
