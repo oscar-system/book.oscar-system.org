@@ -126,7 +126,7 @@ contributors:
     github: benlorenz
     email: benjamin.lorenz@tu-berlin.de
 
-- name: Hannah Markwig
+  - name: Hannah Markwig
     affiliation: University Tübingen
     website: https://www.math.uni-tuebingen.de/user/hannah/
     email: hannah@math.uni-tuebingen.de
