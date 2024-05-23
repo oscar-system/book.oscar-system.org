@@ -92,6 +92,7 @@ contributors:
 
   - name: Isaac Holt
     affiliation: Durham University
+    github: isaacholt100
     email: isaac.a.holt@durham.ac.uk
 
   - name: Max Horn
