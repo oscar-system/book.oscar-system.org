@@ -94,11 +94,6 @@ contributors:
     affiliation: Durham University
     email: isaac.a.holt@durham.ac.uk
 
-  - name: Hannah Markwig
-    affiliation: University Tübingen
-    website: https://www.math.uni-tuebingen.de/user/hannah/
-    email: hannah@math.uni-tuebingen.de
-
   - name: Max Horn
     affiliation: University of Kaiserslautern-Landau
     website: https://www.quendi.de/math
@@ -131,6 +126,11 @@ contributors:
     github: benlorenz
     email: benjamin.lorenz@tu-berlin.de
 
+- name: Hannah Markwig
+    affiliation: University Tübingen
+    website: https://www.math.uni-tuebingen.de/user/hannah/
+    email: hannah@math.uni-tuebingen.de
+
   - name: Rafael Mohr
     affiliation: University of Kaiserslautern-Landau and Sorbonne Université, Paris
     website: https://polsys.lip6.fr/~mohr/
@@ -151,14 +151,14 @@ contributors:
     website: https://www.yueren.de/
     email: yue.ren2@durham.ac.uk
 
+  - name: Lukas Ristau
+    affiliation: University Tübingen
+    email: lukas.ristau@math.uni-tuebingen.de
+
   - name: Kemal Rose
     affiliation: MPI Mathematik in den Naturwissenschaften, Leipzig, Germany,
     e-mail: krose@mis.mpg.de
     website: https://kemalrose.github.io/
-
-  - name: Lukas Ristau
-    affiliation: University Tübingen
-    email: lukas.ristau@math.uni-tuebingen.de
 
   - name: Mohab Safey El Din
     affiliation: Sorbonne Université, Paris
