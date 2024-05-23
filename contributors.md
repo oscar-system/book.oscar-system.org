@@ -143,7 +143,7 @@ contributors:
 
   - name: Lakshmi Ramesh
     affiliation: University of Kaiserslautern-Landau
-    e-mail: ramesh@mathematik.uni-kl.de
+    email: ramesh@mathematik.uni-kl.de
 
   - name: Yue Ren
     affiliation: Durham University
