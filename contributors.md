@@ -200,6 +200,11 @@ contributors:
     affiliation: University of Kaiserslautern-Landau
     email: atraore@rptu.de
 
+  - name: Andrew P. Turner
+    affiliation: University of Pennsylvania
+    website: https://apturner.net/
+    email: turnerap@sas.upenn.edu
+
   - name: Matthias Zach
     affiliation: University of Kaiserslautern-Landau
     website: https://math.rptu.de/ags/agag/personen/mitglieder
