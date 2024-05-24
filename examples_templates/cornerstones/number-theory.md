@@ -6,10 +6,6 @@ title: Number Theory
 ## Authors: Claus Fieker and Tommy Hofmann
 
 ```julia
-# INSERT_EXAMPLE cornerstones/number-theory/auxiliary_code/main.jl
-```
-
-```julia
 # INSERT_EXAMPLE cornerstones/number-theory/intro.jlcon
 ```
 
