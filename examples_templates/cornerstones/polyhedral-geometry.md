@@ -6,10 +6,6 @@ title: Polyhedral Geometry
 ## Authors: Taylor Brysiewicz and Michael Joswig
 
 ```julia
-# INSERT_EXAMPLE cornerstones/polyhedral-geometry/auxiliary_code/main.jl
-```
-
-```julia
 # INSERT_EXAMPLE cornerstones/polyhedral-geometry/pentagon.jlcon
 ```
 
