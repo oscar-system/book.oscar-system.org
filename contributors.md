@@ -28,7 +28,7 @@ contributors:
     email: thomas.breuer@math.rwth-aachen.de
     
   - name: Taylor Brysiewicz
-    affiliation: Max Planck Institute for Mathematics in the Sciences
+    affiliation: University of Western Ontario
     website: https://sites.google.com/view/taylorbrysiewicz/home
     github: tbrysiewicz
     email: tbrysiew@uwo.ca
