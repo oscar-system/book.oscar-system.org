@@ -1,7 +1,36 @@
-using Oscar
+using HTTP
+using JSON
+
+# debug output for now, to be cleaned up once we trust the script
+println("Making temp directory")
+mytmpdir = mktempdir(; prefix="book_")
+dlpath = joinpath(mytmpdir, "dl.zip")
+
+# get link to URL
+println("Grabbing release information")
+r = HTTP.request("GET", "https://api.github.com/repos/oscar-system/Oscar.jl/releases/latest")
+j = JSON.parse(String(r.body))
+zipurl = j["zipball_url"]
+
+# download latest zip
+println("Grabbing latest Oscar release")
+r = HTTP.request("GET", zipurl)
+d = open(dlpath, "w")
+write(d, r.body)
+
+# unzip
+println("Inflating content")
+owd = pwd()
+cd(mytmpdir)
+run(`unzip dl.zip`)
+oscardir = joinpath(mytmpdir,filter(x -> occursin("oscar", x), readdir("./"))[1])
+cd(owd)
+
+# we trust everything after this
+
 function collect_examples(oscardir::String)
     booktestdir = joinpath(oscardir, "test/book")
-    examples = load(joinpath(booktestdir, "ordered_examples.json"))
+    examples = JSON.parse(open(joinpath(booktestdir, "ordered_examples.json")))["data"]
     for key in keys(examples)
         println(key)
         folder, filename = split(key, "/")
@@ -27,3 +56,5 @@ function collect_examples(oscardir::String)
         close(io)
     end
 end
+
+collect_examples(oscardir)
