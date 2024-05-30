@@ -5,13 +5,7 @@ title: Number Theory
 
 ## Authors: Claus Fieker and Tommy Hofmann
 
-### Setup
 
-Code to include additional packages (e.g. tally) to aid the presentation.
-
-```julia
-# INSERT_EXAMPLE cornerstones/number-theory/auxiliary_code/main.jl
-```
 ### 2 Number Fields and Rings of Integers
 
 Basic examples and invariants.
@@ -68,6 +62,8 @@ Code to plot the unit group in a quadratic field: then the logarithm.
 ```
 
 ### 6 Examples
+In the following it is necessary to have the package `Tally` installed, e.g. by running `]add Tally`.
+
 #### 6.1
 ```julia
 # INSERT_EXAMPLE cornerstones/number-theory/cohenlenstra.jlcon
