@@ -5,6 +5,8 @@ title: Faithful Tropicalization of Hyperelliptic Curves
 
 ## Authors: Hannah Markwig, Lukas Ristau and Victoria Schleis
 
+The interested reader may find [this article](https://arxiv.org/pdf/2310.02947) entertaining.
+
 ```julia
 # INSERT_EXAMPLE specialized/markwig-ristau-schleis-faithful-tropicalization/draw_hypersurface.jlcon
 ```

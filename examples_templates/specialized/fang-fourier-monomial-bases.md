@@ -5,6 +5,8 @@ title: Monomial Bases in Lie Theory
 
 ## Authors: Xin Fang and Ghislain Fourier
 
+The interested reader can find more information in [this article](https://arxiv.org/pdf/2403.15018).
+
 ```julia
 # INSERT_EXAMPLE specialized/fang-fourier-monomial-bases/get-operators.jlcon
 ```

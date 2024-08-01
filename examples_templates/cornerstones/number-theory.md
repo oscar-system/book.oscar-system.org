@@ -5,6 +5,7 @@ title: Number Theory
 
 ## Authors: Claus Fieker and Tommy Hofmann
 
+The preprint of this chapter is available [here](https://arxiv.org/abs/2404.06858).
 
 ### 2 Number Fields and Rings of Integers
 

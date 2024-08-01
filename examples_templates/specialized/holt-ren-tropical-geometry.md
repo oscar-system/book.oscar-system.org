@@ -5,6 +5,8 @@ title: Generic Root Counts of Tropically Transverse Systems
 
 ## Authors: Isaac Holt and Yue Ren
 
+The interested reader can find more information in [this article](https://arxiv.org/pdf/2311.18018).
+
 ```julia
 # INSERT_EXAMPLE specialized/holt-ren-tropical-geometry/auxiliary_code/main.jl
 ```

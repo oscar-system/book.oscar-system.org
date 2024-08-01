@@ -5,6 +5,8 @@ title: Group Theory
 
 ## Authors: Max Horn and Claus Fieker
 
+The preprint of this chapter is available [here](https://arxiv.org/abs/2404.05871).
+
 ```julia
 # INSERT_EXAMPLE cornerstones/groups/auxiliary_code/main.jl
 ```

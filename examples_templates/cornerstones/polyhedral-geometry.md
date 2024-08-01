@@ -5,6 +5,8 @@ title: Polyhedral Geometry
 
 ## Authors: Taylor Brysiewicz and Michael Joswig
 
+The preprint of this chapter is available [here](https://arxiv.org/abs/2308.07459).
+
 ```julia
 # INSERT_EXAMPLE cornerstones/polyhedral-geometry/pentagon.jlcon
 ```

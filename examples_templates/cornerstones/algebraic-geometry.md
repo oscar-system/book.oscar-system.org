@@ -5,6 +5,8 @@ title: Commutative Algebra and Algebraic Geometry
 
 ## Authors: Janko Böhm, Wolfram Decker and Frank-Olaf Schreyer
 
+The preprint of this chapter is available  [here](https://arxiv.org/abs/2404.12085).
+
 ```julia
 # INSERT_EXAMPLE cornerstones/algebraic-geometry/ex11.jlcon
 ```
