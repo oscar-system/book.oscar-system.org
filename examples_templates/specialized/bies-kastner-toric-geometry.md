@@ -5,6 +5,8 @@ title: Toric Geometry
 
 ## Authors: Martin Bies and Lars Kastner
 
+Interested readers can find more information in [this article](https://arxiv.org/abs/2303.08110).
+
 ## 2 Preliminaries
 
 ### 2.1 Polytopes, Cones, Fans and Toric Varieties
