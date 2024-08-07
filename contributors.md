@@ -93,7 +93,7 @@ contributors:
   - name: Isaac Holt
     affiliation: Durham University
     github: isaacholt100
-    email: isaac.a.holt@durham.ac.uk
+    email: isaac_holt@icloud.com
 
   - name: Max Horn
     affiliation: University of Kaiserslautern-Landau
