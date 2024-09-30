@@ -14,8 +14,8 @@ These are valuable for interested researchers from graduate students through est
 The book is available from Springer at
 [https://link.springer.com/book/9783031621260](https://link.springer.com/book/9783031621260).
 
-This website hosts [code samples](https://book.oscar-system.org/examples/) from the book and
-provides a [list of errata](https://book.oscar-system.org/errata/).
+This website hosts [code samples]({{ site.baseurl }}/examples/) from the book and
+provides a [list of errata]({{ site.baseurl }}/errata/).
 
 ## Citation
 
