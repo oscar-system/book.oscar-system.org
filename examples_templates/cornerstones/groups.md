@@ -58,6 +58,11 @@ The characters of SL(2,5) ... and the representation of chapter 8
 
 ### 9 Generic character tables
 
+This section showcases the
+[`GenericCharacterTables.jl` package](https://github.com/oscar-system/GenericCharacterTables.jl).
+An extended and possibly updated version of this example can be found in
+[the package manual](https://oscar-system.github.io/GenericCharacterTables.jl/stable/book/).
+
 ```julia
 # INSERT_EXAMPLE cornerstones/groups/genchar.jlcon
 ```
