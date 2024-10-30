@@ -32,7 +32,7 @@ Code to plot the unit group in a quadratic field: first the conjugates
 Code to plot the unit group in a quadratic field: then the logarithm.
 
 ```julia
-# INSERT_EXAMPLE cornerstones/number-theory/unit_log_plot.jl
+# INSERT_EXAMPLE cornerstones/number-theory/unit_log_plot.jlcon
 ```
 ### 3 General Number Fields and Morphisms
 
