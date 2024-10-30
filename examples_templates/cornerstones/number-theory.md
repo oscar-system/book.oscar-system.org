@@ -59,7 +59,7 @@ Code to plot the unit group in a quadratic field: then the logarithm.
 ### 5 Symmetries
 
 ```julia
-# INSERT_EXAMPLE cornerstones/number-theory/sym_1.jl
+# INSERT_EXAMPLE cornerstones/number-theory/sym_1.jlcon
 ```
 
 ### 6 Examples
@@ -76,9 +76,9 @@ In the following it is necessary to have the package `Tally` installed, e.g. by 
 ```
 
 ```julia
-# INSERT_EXAMPLE cornerstones/number-theory/galoismod_1.jl
+# INSERT_EXAMPLE cornerstones/number-theory/galoismod_1.jlcon
 ```
 
 ```julia
-# INSERT_EXAMPLE cornerstones/number-theory/galoismod_2.jl
+# INSERT_EXAMPLE cornerstones/number-theory/galoismod_2.jlcon
 ```
