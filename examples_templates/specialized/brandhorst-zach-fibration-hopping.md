@@ -15,6 +15,3 @@ The interested reader can find more information in [this article](https://arxiv.
 # INSERT_EXAMPLE specialized/brandhorst-zach-fibration-hopping/vinberg_2.jlcon
 ```
 
-```julia
-# INSERT_EXAMPLE specialized/brandhorst-zach-fibration-hopping/vinberg_3.jlcon
-```
