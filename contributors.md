@@ -172,10 +172,10 @@ contributors:
     website: https://victoriaschleis.github.io/
 
   - name: Johannes Schmitt
-    affiliation: University of Siegen
+    affiliation: Ruhr-Universität Bochum
     website: https://joschmitt.eu
     github: joschmitt
-    email: johannes2.schmitt@uni-siegen.de
+    email: johannes.schmitt@ruhr-uni-bochum.de
 
   - name: Frank-Olaf Schreyer
     affiliation: Saarland University
