@@ -5,6 +5,8 @@ title: Invariant Theory
 
 ## Authors: Wolfram Decker, Lakshmi Ramesh and Johannes Schmitt
 
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_12).
+
 ### Invariants of symmetric groups
 
 The invariants of the symmetric groups $S_4$ and $S_3$ serve as basic examples, see Examples 2 and 7.

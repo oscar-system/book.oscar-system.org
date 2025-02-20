@@ -5,7 +5,9 @@ title: Commutative Algebra and Algebraic Geometry
 
 ## Authors: Janko Böhm, Wolfram Decker and Frank-Olaf Schreyer
 
-The preprint of this chapter is available  [here](https://arxiv.org/abs/2404.12085).
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_2).
+
+A preprint of this chapter is available [here](https://arxiv.org/abs/2404.12085).
 
 ```julia
 # INSERT_EXAMPLE cornerstones/algebraic-geometry/ex11.jlcon

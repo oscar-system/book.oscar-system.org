@@ -5,7 +5,9 @@ title: Toric Geometry
 
 ## Authors: Martin Bies and Lars Kastner
 
-Interested readers can find more information in [this article](https://arxiv.org/abs/2303.08110).
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_7).
+
+A preprint of this chapter is available [here](https://arxiv.org/abs/2303.08110).
 
 ## 2 Preliminaries
 

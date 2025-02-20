@@ -5,7 +5,9 @@ title: Group Theory
 
 ## Authors: Max Horn and Claus Fieker
 
-The preprint of this chapter is available [here](https://arxiv.org/abs/2404.05871).
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_4).
+
+A preprint of this chapter is available [here](https://arxiv.org/abs/2404.05871).
 
 ```julia
 # INSERT_EXAMPLE cornerstones/groups/auxiliary_code/main.jl

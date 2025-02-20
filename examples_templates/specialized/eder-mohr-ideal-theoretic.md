@@ -5,6 +5,8 @@ title: Gröbner Bases for Polynomial Ideals and Applications
 
 ## Authors: Christian Eder, Rafael Mohr and Mohab Safey El Din
 
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_11).
+
 ### How to use Gröbner bases in OSCAR explained on the computation of Hilbert series
 
 ```julia

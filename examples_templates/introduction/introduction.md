@@ -5,7 +5,9 @@ title: Introduction
 
 ## Authors: Claus Fieker and Michael Joswig
 
-The interested reader might find the article [OSCAR: An introduction (M. Horn)](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf) entertaining.
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_1).
+
+Interested readers might also find the article [OSCAR: An introduction (M. Horn)](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf) entertaining.
 
 ```julia
 # INSERT_EXAMPLE introduction/introduction/julia.jlcon

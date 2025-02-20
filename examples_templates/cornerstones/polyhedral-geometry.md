@@ -5,7 +5,9 @@ title: Polyhedral Geometry
 
 ## Authors: Taylor Brysiewicz and Michael Joswig
 
-The preprint of this chapter is available [here](https://arxiv.org/abs/2308.07459).
+This page contains the code samples from the corresponding chapter in the OSCAR book. You can access the full chapter [here](https://link.springer.com/chapter/10.1007/978-3-031-62127-7_5).
+
+A preprint of this chapter is available [here](https://arxiv.org/abs/2308.07459).
 
 ```julia
 # INSERT_EXAMPLE cornerstones/polyhedral-geometry/pentagon.jlcon
