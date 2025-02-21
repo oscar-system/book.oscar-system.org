@@ -28,7 +28,7 @@ Please cite the book as described below :
     Algorithms and Computation in Mathematics, Springer, 2025. (https://link.springer.com/book/9783031621260)
 ```
 
-If you are using BibTeX, you can use the following BibTeX entries to cite the book :
+If you are using BibTeX, you can use the following BibTeX entry to cite the book :
 
 ```bibtex
 @book{OSCAR-book,
