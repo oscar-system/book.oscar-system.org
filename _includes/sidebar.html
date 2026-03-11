@@ -9,19 +9,40 @@
     </div>
 
     <nav class="sidebar-nav">
+      {% assign versions = site.data.versions %}
 
-      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+      {% for mv in versions %}
+        {% if page.url contains mv %}
+          {% assign pv = mv %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign versionhome = "/" | append: pv | append: "/"%}
+      <a class="sidebar-nav-item{% if page.url == versionhome %} active{% endif %}" href="{{ site.baseurl }}/{{pv}}">Home</a>
 
-      <a class="sidebar-nav-item{% if page.url == '/examples/' %} active{% endif %}" href="{{ site.baseurl }}/examples">Code & Chapters</a>
+      {% assign versionexamples = "/" | append: pv | append: "/examples/"%}
+      <a class="sidebar-nav-item{% if page.url == versionexamples %} active{% endif %}" href="{{ site.baseurl }}/{{pv}}/examples">Code & Chapters</a>
 
-      <a class="sidebar-nav-item{% if page.url == '/contributors/' %} active{% endif %}" href="{{ site.baseurl }}/contributors">Contributors</a>
+      {% assign versioncontributors = "/" | append: pv | append: "/contributors/" %}
+      <a class="sidebar-nav-item{% if page.url == versioncontributors %} active{% endif %}" href="{{ site.baseurl }}/{{pv}}/contributors">Contributors</a>
 
-      <a class="sidebar-nav-item{% if page.url == '/errata/' %} active{% endif %}" href="{{ site.baseurl }}/errata">Errata</a>
+      {% assign versionerrata = "/" | append: pv | append: "/errata/" %}
+      <a class="sidebar-nav-item{% if page.url == {{versionerrata}} %} active{% endif %}" href="{{ site.baseurl }}/{{pv}}/errata">Errata</a>
 
       <a class="sidebar-nav-item" href="https://www.oscar-system.org/">The OSCAR project</a>
 
       <a class="sidebar-nav-item" href="https://github.com/oscar-system/Oscar.jl/">Oscar.jl on Github</a>
 
+
+      Version: <select id="version-list" onchange="javascript:handleVersionSelect(this)">
+        {% for v in versions %}
+        {% if page.url contains v %}
+        <option value="{{v}}" selected>{{v}}</option>
+        {% else %}
+        <option value="{{v}}">{{v}}</option>
+        {% endif %}
+        {% endfor %}
+      </select>
       <!-- {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
