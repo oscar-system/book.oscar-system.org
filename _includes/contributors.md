@@ -1,8 +1,3 @@
----
-layout: page
-title: Contributors
----
-
 ## Editors
 
 <ul>
