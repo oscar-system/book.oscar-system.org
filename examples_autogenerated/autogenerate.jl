@@ -3,15 +3,16 @@ using JSON
 using YAML
 
 versions = YAML.load_file("../_data/versions.yml")
+println("Making cache path for downloads")
+cachepath = joinpath(".","cache")
+mkpath(cachepath)
+
 for version in versions
 
     # debug output for now, to be cleaned up once we trust the script
     println("Making temp directory for $(version)")
-    mytmpdir = mktempdir(; prefix="book_$(version)", cleanup=false)
-    dlpath = joinpath(mytmpdir, "dl.zip")
+    mytmpdir = mktempdir(; prefix="book_$(version)")
 
-    # get link to URL
-    println("Grabbing release information")
     if version == "1.0"
         zipurl = "https://api.github.com/repos/oscar-system/Oscar.jl/zipball/v$(version).1"
     else
@@ -19,10 +20,33 @@ for version in versions
     end
 
     # download latest zip
-    println("Grabbing latest Oscar release")
-    r = HTTP.request("GET", zipurl)
-    d = open(dlpath, "w")
-    write(d, r.body)
+    println("Grabbing latest Oscar release information")
+    r = HTTP.request("HEAD", zipurl)
+    if r.status != 200
+        error("Network issue! Line 29!")
+    end
+    dlfilename = ""
+    for (k,v) in r.headers
+        if k == "content-disposition"
+            index = findfirst("filename=", v).stop
+            dlfilename = v[index+1:end]
+            break
+        end
+    end
+    dlpath = joinpath(cachepath, dlfilename)
+    if !isfile(dlpath)
+        # do the actual download only if not already in cache
+        println("Version $(version) not found in cache! Downloading...")
+        r = HTTP.request("GET", zipurl)
+        d = open(dlpath, "w")
+        write(d, r.body)
+    else
+        println("Version $(version) found in cache! Reusing...")
+    end
+
+    println("Copying file to tmpdir...")
+    finalpath = joinpath(mytmpdir, "dl.zip")
+    cp(dlpath, finalpath)
 
     # unzip
     println("Inflating content")
