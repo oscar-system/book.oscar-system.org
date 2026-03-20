@@ -1,3 +1,8 @@
+using Pkg
+Pkg.add("HTTP")
+Pkg.add("JSON")
+Pkg.add("YAML")
+
 using HTTP
 using JSON
 using YAML
