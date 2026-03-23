@@ -99,6 +99,9 @@ for version in versions
             entire = read(joinpath("../examples_templates", folder, filename*".md"), String)
             output = String(entire)
             println(entire)
+            # get rid of permalink and redirect layout
+            output = replace(output, "layout: redirect" => "layout: page")
+            output = replace(output, r"permalink: .*" => "")
             for m in eachmatch(r"# INSERT_EXAMPLE (\S*)", entire)
                 codefile = m[1]
                 try
