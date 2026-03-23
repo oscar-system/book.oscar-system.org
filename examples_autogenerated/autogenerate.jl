@@ -7,7 +7,30 @@ using HTTP
 using JSON
 using YAML
 
-versions = YAML.load_file("../_data/versions.yml")
+# fetch latest version
+
+releaseURL = "https://api.github.com/repos/oscar-system/oscar.jl/releases/latest"
+r = HTTP.request("GET", releaseURL)
+if r.status != 200
+    error("Network error when trying to fetch latest version!")
+end
+latestVersion = JSON.parse(r.body)["name"]
+
+major, minor, patch = split(latestVersion, ".")
+major, minor, patch = parse.(Int, [major[2:end], minor, patch])
+
+# build the list of versions
+# as long as its Oscar 1.x, we can get away with using a single loop
+# when we hit Oscar 2.x, we will need a double loop
+
+versions = []
+
+for i in minor:-1:0
+    push!(versions, "1.$i")
+end
+
+# write versions to file
+YAML.write_file("../_data/versions.yml", versions)
 println("Making cache path for downloads")
 cachepath = joinpath(".","cache")
 mkpath(cachepath)
@@ -26,9 +49,9 @@ for version in versions
 
     # download latest zip
     println("Grabbing latest Oscar release information")
-    r = HTTP.request("HEAD", zipurl)
+    local r = HTTP.request("HEAD", zipurl)
     if r.status != 200
-        error("Network issue! Line 29!")
+        error("Network issue when fetching OSCAR zips!")
     end
     dlfilename = ""
     for (k,v) in r.headers
