@@ -107,5 +107,14 @@ if (document.readyState === "loading") {
 ////////////////////////////////////////////////////////////////////////////////
   </script>
 
+  <script type="text/javascript">
+    // script for making the version selector on the sidebar work
+    function handleVersionSelect(x){
+      const regx = /1\.[0-9]/i;
+      var myurl = window.location.href;
+      myurl = myurl.replace(regx, x.value)
+      window.location.href=myurl
+    }
+</script>
 {% seo %}
 </head>
