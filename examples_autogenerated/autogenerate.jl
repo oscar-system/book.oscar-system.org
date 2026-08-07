@@ -53,14 +53,7 @@ for version in versions
     if r.status != 200
         error("Network issue when fetching OSCAR zips!")
     end
-    dlfilename = ""
-    for (k,v) in r.headers
-        if k == "content-disposition"
-            index = findfirst("filename=", v).stop
-            dlfilename = v[index+1:end]
-            break
-        end
-    end
+    dlfilename = "v$(version).zip"
     dlpath = joinpath(cachepath, dlfilename)
     if !isfile(dlpath)
         # do the actual download only if not already in cache
